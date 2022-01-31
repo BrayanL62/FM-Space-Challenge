@@ -1,0 +1,36 @@
+.index-body {
+    background: url('/assets/home/background-home-mobile.jpg');
+    background-size: cover;
+
+    &__btn {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        background-color: #FFF;
+        color: $white-button-font-color;
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px auto;
+    width: 327px;
+    height: 276px;
+    
+    &__paragraph {
+        font-size: 15px;
+        color: $primary-font-color;
+    }
+
+    &--title {
+        font-size: 80px;
+        color: $secondary-font-color;
+    }
+}

@@ -1,0 +1,24 @@
+@import '_variables.scss';
+@import '_font-family.scss';
+@import '_homepage.scss';
+@import '_navbar.scss';
+@import '_hamburgerIcon.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Barlow Regular';
+}
+
+.logo {
+    width: 40px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}

@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Barlow Regular";
+  src: url(/fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: "Barlow Light";
+  src: url(/fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face {
+  font-family: "Barlow Lighter";
+  src: url(/fonts/Barlow/Barlow-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Barlow Bold";
+  src: url(/fonts/Barlow/Barlow-Bold.ttf);
+}
+.index-body {
+  background: url("/assets/home/background-home-mobile.jpg");
+  background-size: cover;
+}
+.index-body__btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #FFF;
+  color: #0B0D17;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px auto;
+  width: 327px;
+  height: 276px;
+}
+.main__paragraph {
+  font-size: 15px;
+  color: #D0D6F9;
+}
+.main--title {
+  font-size: 80px;
+  color: #F1F1F1;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(4px);
+}
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  margin: 15vh 5vw;
+}
+.navbar--link {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  font-family: "Barlow Lighter";
+}
+.navbar--number {
+  font-family: "Barlow Bold";
+  color: #FFF;
+}
+
+.navbar__hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+}
+
+.icon {
+  display: flex;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 35px;
+  right: 25px;
+}
+
+.icon__hamburger {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 0px;
+  z-index: 2;
+}
+
+.icon--lines {
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #D0D6F9;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.icon--lines:nth-child(1) {
+  top: 0px;
+}
+
+.icon--lines:nth-child(2) {
+  top: 8px;
+}
+
+.icon--lines:nth-child(3) {
+  top: 16px;
+}
+
+.icon__hamburger.active .icon--lines:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.icon__hamburger.active .icon--lines:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.icon__hamburger.active .icon--lines:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Barlow Regular";
+}
+
+.logo {
+  width: 40px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+/*# sourceMappingURL=index.css.map */

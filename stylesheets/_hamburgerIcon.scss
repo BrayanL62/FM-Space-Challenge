@@ -1,0 +1,51 @@
+.icon {
+    display: flex;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+}
+
+.icon__hamburger {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    z-index: 2;
+}
+
+.icon--lines {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $primary-font-color;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon--lines:nth-child(1){
+    top: 0px;
+}
+
+.icon--lines:nth-child(2){
+    top: 8px;
+}
+
+.icon--lines:nth-child(3){
+    top: 16px;
+}
+
+.icon__hamburger.active .icon--lines:nth-child(1) {
+    top: 8px;
+    transform: rotate(135deg);
+}
+.icon__hamburger.active .icon--lines:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+.icon__hamburger.active .icon--lines:nth-child(3) {
+    top: 8px;
+    transform: rotate(-135deg);
+}

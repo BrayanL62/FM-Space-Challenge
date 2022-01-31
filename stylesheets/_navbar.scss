@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(4px);
+    
+    
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin: 15vh 5vw;
+    }
+    
+    &--link {
+        margin: 20px 0;
+        text-decoration: none;
+        color: #FFF;
+        text-transform: uppercase;
+        letter-spacing: 2.7px;
+        font-family: 'Barlow Lighter';
+    }
+    
+    &--number {
+        font-family: 'Barlow Bold';
+        color: #FFF;
+    }
+
+}
+
+.navbar__hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);
+}
